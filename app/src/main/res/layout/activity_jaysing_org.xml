@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".Activity.UserHomePage"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dadukaka Bhide Balgruh"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#990000"
+                android:layout_weight="0.12"
+                android:textSize="25sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/jaysing"
+                android:scaleType="fitXY"
+                android:layout_weight="0.12"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="About Us : "
+                    android:id="@+id/textView2"
+                    android:layout_weight="0.12"
+                    android:textColor="#990000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="367dp"
+                    android:layout_height="match_parent"
+
+                    android:text="\t\tWe believe that children excel when families participate in their education and growth. We are working with the community to help them learn creative, educational games."
+                    android:textSize="15sp"
+                    android:textColor="#020202" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="Events : "
+                android:layout_weight="0.12"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:id="@+id/event"
+                />
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="● Recreation activities \n● Running and Cycling etc Competitions\n● Sunday Testimonies\n● Republic,Independence day celebration  "
+                android:layout_weight="0.12"
+                android:textSize="15sp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="Achievements and Milestones :"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:id="@+id/achivements"
+                />
+            <TextView
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:text=" ● Compaign for humanity and equality \n ● Recognized teaching centers for students\n ● Awareness campaign for environment and health"
+                android:layout_weight="0.12"
+                android:textSize="15sp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:contextClickable="false">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Select your help option ::"
+                android:layout_weight="0.12"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloth"
+                android:id="@+id/j_cloth"
+                android:layout_weight="0.12"
+                android:onClick="onCheckboxClicked"
+                android:checked="false"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Food"
+                android:id="@+id/j_food"
+                android:onClick="onCheckboxClicked"
+                android:checked="false" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Study Material"
+                android:id="@+id/j_studymaterial"
+                android:onClick="onCheckboxClicked"
+                android:checked="false" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Volunteering for their event"
+                android:id="@+id/j_volunteer"
+                android:onClick="onCheckboxClicked"
+                android:checked="false" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Oragnize an event for oraganization"
+                android:id="@+id/j_orgnise"
+                android:onClick="onCheckboxClicked"
+                android:checked="false" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Others specify in message"
+                android:id="@+id/j_other"
+                android:onClick="onCheckboxClicked"
+                android:checked="false" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/j_helpcontent_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message here.... "
+            android:paddingTop="20dp"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="send"
+            android:id="@+id/j_sendmessage_button"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

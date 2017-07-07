@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shubham.saya_10">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.CreateAccount"
+            android:label="SAYA_1.0"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="SAYA_1.0" />
+        <activity android:name=".Activity.UserHomePage" />
+        <activity android:name=".Activity.AdminHomePage" />
+        <activity android:name=".Activity.AvailableOrg" />
+        <activity android:name=".Activity.Contact" />
+        <activity android:name=".Activity.contact2" />
+        <activity android:name=".Activity.contact3" />
+        <activity android:name=".Activity.contact4" />
+        <activity android:name=".Activity.HelpOrg" />
+        <activity android:name=".Activity.MirajOrg" />
+        <activity android:name=".Activity.JaysingOrg" />
+        <activity android:name=".Activity.IchalOrg" />
+        <activity android:name=".Activity.KopOrg" />
+        <activity android:name=".Activity.HelpDetails" />
+        <activity android:name=".Activity.UserReply" />
+        <activity android:name=".Activity.blog" />
+        <activity android:name=".Activity.ReadBlog" />
+        <activity android:name=".Activity.BlogList" />
+        <activity android:name=".Activity.ReplyDetails" />
+        <activity android:name=".Activity.AdminDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BlogCoustem" />
+        <activity android:name=".Activity.AdminMessageCustom" />
+        <activity android:name=".Activity.UserMessageCustom" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.AboutUs" />
+    </application>
+
+</manifest>
